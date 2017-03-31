@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 5, 2013 10:57:32 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.babonlineshopping.entity.Customer" table="customer" catalog="babdb" optimistic-lock="version">
+        <id name="cust_Id" type="java.lang.Integer">
+            <column name="cust_Id" />
+            <generator class="identity" />
+        </id>
+        <property name="cust_Name" type="string">
+            <column name="cust_Name" length="45" not-null="true" />
+        </property>
+        
+        <property name="cust_Surname" type="string">
+            <column name="cust_Surname" length="45" not-null="true" />
+        </property>
+        
+         <property name="cust_Email_Add" type="string">
+            <column name="cust_Email_Add" length="255" not-null="true" />
+        </property>
+        
+        
+        <property name="cust_Username" type="string">
+            <column name="cust_Username" length="255" not-null="true" />
+        </property>
+      
+       
+        <property name="cust_Password" type="string">
+            <column name="cust_Password" length="255" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
+
+
